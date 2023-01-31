@@ -6,18 +6,9 @@ const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.createURL("/")],
   config: {
     screens: {
-      Root: {
+      Restaurant: {
         screens: {
-          Home: {
-            screens: {
-              HomeScreen: "home",
-            },
-          },
-          Restaurant: {
-            screens: {
-              RestaurantScreen: "restaurant",
-            },
-          },
+          RestaurantScreen: "restaurant",
         },
       },
       NotFound: "*",

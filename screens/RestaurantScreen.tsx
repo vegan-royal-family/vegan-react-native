@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
-
-import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
+import { RootStackScreenProps } from "../types";
 
-export default function TestScreen() {
+export default function RestaurantScreen({
+  navigation,
+}: RootStackScreenProps<"Restaurant">) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Test</Text>
       <View style={styles.separator} />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
     </View>
   );
 }
